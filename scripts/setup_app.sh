@@ -2,6 +2,6 @@
 
 set -ev
 
-drush si minimal --existing-config --define drush.alias='${drush.aliases.ci}' --environment=ci --no-interaction --ansi --verbose
+vendor/bin/drush @self si minimal --existing-config --define drush.alias='${drush.aliases.ci}' --no-interaction --ansi -vvv
 
 set +v
